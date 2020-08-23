@@ -55,6 +55,7 @@ body {
   padding: 1rem 2rem;
   margin-bottom: 3rem;
   box-shadow: 5px 7px 18px var(--color-text-2);
+  height: 250px;
 }
 
 .card h3 {
@@ -83,11 +84,17 @@ body {
   flex-direction: row-reverse;
   margin: 1.8rem 0;
 }
+.cards-container {
+  margin-top: 0;
+  height: calc(550px + 5rem);
+}
 
 @media (min-width: 1440px){
+
   .header {
     margin: 5rem auto;
     width: 45.5%;
+    margin-bottom: 2rem;
   }
 
   .header h2, .header h1{
@@ -99,11 +106,13 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 60vh;
     justify-content: center;
     align-content: center;
+    align-items: flex-end;
     overflow: hidden;
   }
+
+
 
   .card {
     width: 25%;
@@ -112,18 +121,12 @@ body {
 
   .card:nth-child(1) {
     /* flex: 1; */
-    flex-grow: 1;
-    margin: 99rem 0;
-  }
-  .card:nth-child(2) {
-    flex-grow: 1;
-  }
-  .card:nth-child(3) {
-    flex-grow: 1;
+    margin: 3rem 0;
   }
   .card:nth-child(4) {
-    flex-grow: 1;
-    margin: 999rem 0;
+    margin: 3rem 0;
   }
 
 }
+
+
