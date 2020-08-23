@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+  box-sizing: border-box;
+  font-size: 15px;
+  --color-1: hsl(180, 62%, 55%);
+  --color-2: hsl(0, 78%, 62%);
+  --color-3: hsl(34, 97%, 64%);
+  --color-4: hsl(212, 86%, 64%);
+
+  --color-text-1: hsl(234, 12%, 34%);
+  --color-text-2: hsl(229, 6%, 66%);
+  --color-5: hsl(0, 0%, 98%);
+  font-family: Poppins, system-ui;
+}
+
+body {
+  background-color: var(--color-5);
+  margin: 0;
+  font-weight: 400;
+  /* background-color: var(--color--text-2); */
+  color: var(--color-text-2)
+}
+
+
+.container {
+  /* border: 5px solid red; */
+  width: 85%;
+  margin: 0 auto;
+}
+
+.header {
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.header h2 {
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+.header h1 {
+  color: var(--color-text-1);
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.header p {
+  font-size: 1.095rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 5px 7px 18px var(--color-text-2);
+}
+
+.card h3 {
+  color: var(--color-text-1);
+  font-size: 1.3rem;
+}
+.card p {
+  font-size: 1.2rem;
+}
+
+.card:nth-child(1) {
+  border-top: 2px solid var(--color-1);
+}
+.card:nth-child(2) {
+  border-top: 2px solid var(--color-2);
+}
+.card:nth-child(3) {
+  border-top: 2px solid var(--color-3);
+}
+.card:nth-child(4) {
+  border-top: 2px solid var(--color-4);
+}
+
+.card .img {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 1.8rem 0;
+}
+
+@media (min-width: 1440px){
+  .header {
+    margin: 5rem auto;
+    width: 45.5%;
+  }
+
+  .header h2, .header h1{
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 60vh;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+  }
+
+  .card {
+    width: 25%;
+    margin: 1rem;
+  }
+
+  .card:nth-child(1) {
+    /* flex: 1; */
+    flex-grow: 1;
+    margin: 99rem 0;
+  }
+  .card:nth-child(2) {
+    flex-grow: 1;
+  }
+  .card:nth-child(3) {
+    flex-grow: 1;
+  }
+  .card:nth-child(4) {
+    flex-grow: 1;
+    margin: 999rem 0;
+  }
+
+}
